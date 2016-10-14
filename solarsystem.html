@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style type="text/css">
+   
+#sunrange{
+  width: 260px;
+  height: 260px;
+  margin: auto;
+  position: relative;
+  animation:myfirst 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#sun{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background: red;
+  margin: auto;
+  top: 0;left: 0;bottom: 0;right: 0;
+  position: absolute;
+}
+#earthrange{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  right: 0;
+  top: 50%;
+  transform:translate(0,-50%);
+  -webkit-transform:translate(0,-50%);
+  animation:myfirst 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#earth{
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: blue;
+ margin: auto;
+  top: 0;left: 0;bottom: 0;right: 0;
+  position: absolute;
+}
+
+#moon{
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: orange;
+  position: absolute;
+  margin: auto;
+  top: 0;bottom: 0;
+  left: 0;
+}
+   
+   @keyframes myfirst
+{
+ from  {transform: rotate(0deg);
+-ms-transform: rotate(0deg);   /* IE 9 */
+-webkit-transform: rotate(0deg); /* Safari and Chrome */
+-o-transform: rotate(0deg);    /* Opera */
+-moz-transform: rotate(0deg);    /* Firefox */ }
+ to  {transform: rotate(360deg);
+-ms-transform: rotate(360deg);   /* IE 9 */
+-webkit-transform: rotate(360deg); /* Safari and Chrome */
+-o-transform: rotate(360deg);    /* Opera */
+-moz-transform: rotate(360deg);    }
+
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from  {transform: rotate(0deg);
+-ms-transform: rotate(0deg);   /* IE 9 */
+-webkit-transform: rotate(0deg); /* Safari and Chrome */
+-o-transform: rotate(0deg);    /* Opera */
+-moz-transform: rotate(0deg);    /* Firefox */ }
+ to  {transform: rotate(360deg);
+-ms-transform: rotate(360deg);   /* IE 9 */
+-webkit-transform: rotate(360deg); /* Safari and Chrome */
+-o-transform: rotate(360deg);    /* Opera */
+-moz-transform: rotate(360deg);    }
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+from  {transform: rotate(0deg);
+-ms-transform: rotate(0deg);   /* IE 9 */
+-webkit-transform: rotate(0deg); /* Safari and Chrome */
+-o-transform: rotate(0deg);    /* Opera */
+-moz-transform: rotate(0deg);    /* Firefox */ }
+ to  {transform: rotate(360deg);
+-ms-transform: rotate(360deg);   /* IE 9 */
+-webkit-transform: rotate(360deg); /* Safari and Chrome */
+-o-transform: rotate(360deg);    /* Opera */
+-moz-transform: rotate(360deg);    }
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from  {transform: rotate(0deg);
+-ms-transform: rotate(0deg);   /* IE 9 */
+-webkit-transform: rotate(0deg); /* Safari and Chrome */
+-o-transform: rotate(0deg);    /* Opera */
+-moz-transform: rotate(0deg);    /* Firefox */ }
+ to  {transform: rotate(360deg);
+-ms-transform: rotate(360deg);   /* IE 9 */
+-webkit-transform: rotate(360deg); /* Safari and Chrome */
+-o-transform: rotate(360deg);    /* Opera */
+-moz-transform: rotate(360deg);    }
+}
+  </style>
+</head>
+<body>
+  <div id="sunrange">
+    <div id="sun"></div>
+    <div id="earthrange">
+      <div id="earth"></div>
+      
+      <div id="moon"></div>
+    
+    </div>
+  </div>
+</body>
+</html>
